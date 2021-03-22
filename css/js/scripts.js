@@ -1,10 +1,4 @@
-jQuery(function ($) {
-
-    $('.event-nav').on('click',function(e){
-        e.preventDefault;
-        
-        $('.login-wrapper').toggleClass('show');
-    });
+jQuery(document).ready(function($){
 
     $('.login-btn').click(function(){
         $('.login-wrapper').toggleClass('show');
@@ -41,6 +35,4 @@ jQuery(function ($) {
     //       $(element).parent('.agenda-rows').addClass("lightgrey");
     //     }
     //   });
-
-    $('.music-container h3').attr('data-mh','mh-title');
 });

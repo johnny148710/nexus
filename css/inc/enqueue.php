@@ -30,13 +30,16 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 
 		// Custom scripts
 		wp_enqueue_script( 'custom-script', get_template_directory_uri() . '/js/scripts.js', array(), true);
-		wp_enqueue_script( 'matchHeight-script', get_template_directory_uri() . '/js/matchHeight.js', array(), false);
+		wp_enqueue_script( 'matchHeight-script', get_template_directory_uri() . '/js/matchHeight.js', array(), true);
 
-		wp_enqueue_script( 'gsap-core-script', get_template_directory_uri() . '/js/gsap/gsap.js', array(), false, true);
-		wp_enqueue_script( 'drawSVG', get_template_directory_uri() . '/js/gsap/drawsvgplugin.js', array(), true, true); 
-		wp_enqueue_script( 'CSSPlugin', get_template_directory_uri() . '/js/gsap/cssruleplugin.js', array(), false, true); 
-		wp_enqueue_script( 'gsap-functions', get_template_directory_uri() . '/js/gsap/gsap-functions.js', array(), false, true);
-
+		wp_enqueue_script( 'gsap-functions', get_template_directory_uri() . '/js/gsap/gsap-functions.js', array(), false, true);	
+		wp_enqueue_script( 'gsap-core-script', get_template_directory_uri() . '/js/gsap/gsap-core.js', array(), false, true);
+		// wp_enqueue_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min', array(), false, true );
+		
+		wp_enqueue_script( 'drawSVG', get_template_directory_uri() . '/js/gsap/DrawSVGPlugin.js', array(), false, true); 
+		wp_enqueue_script( 'CSSPlugin', get_template_directory_uri() . '/js/gsap/CSSPlugin.js', array(), false, true); 
+		
+			
 	}
 } // End of if function_exists( 'understrap_scripts' ).
 

@@ -1342,8 +1342,14 @@
             <polygon class="cls-126" points="169.41 542.11 169.36 560.84 153.06 551.43 153.12 532.7 169.41 542.11 169.41 542.11"/>
             <path class="cls-108" d="M171.13,539.16c-.94-.55-1.71-.11-1.71,1l-.06,20.7,0-18.73-16.3-9.41v-2a3.77,3.77,0,0,0-1.71-3l19.72,11.39Z"/>
           </g>
-
-        <a href="<?php the_field('meet_link'); ?>">
+		  <?php 
+			$link = get_field('meet_link');
+			if( $link ): 
+				$link_url = $link['url'];
+				$link_title = $link['title'];
+				$link_target = $link['target'] ? $link['target'] : '_self';
+    		?>
+    	<a href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
           <g class="svg-icon meet">
             <polygon class="cls-2" points="741.64 720.2 785.39 720.2 785.39 621.18 623.03 621.18 623.03 720.2 662.69 720.2 674.47 720.18 683.39 720.18 703.07 758.4 723.86 720.18 733.94 720.18 741.64 720.2"/>
             <g>
@@ -1361,6 +1367,7 @@
             </g>  
           <g>
         </a>
+	<?php endif; ?>
           <path class="cls-134" d="M773.73,818.51l91.8-53c1-.54,1.72-.1,1.72,1v66.86a7.6,7.6,0,0,1-3.44,5.95l-65.47,37.8a13.87,13.87,0,0,0-4.23,4l-20.2,28.77c-.79,1.12-1.9,1.11-1.9,0V821.48A3.77,3.77,0,0,1,773.73,818.51Z"/>
           <g>
               <path class="cls-135" d="M866.78,765.41h0v0Z"/>
@@ -1492,12 +1499,13 @@
       <div class="modal-body">
         <div class="row">
 			<div class="col-md-6 text-center">
-				<h3>1 Player Game</h3>
-	  			<a class="button" href="/1-player-arcade">Play single player now</a>
+				<h3 data-mh="game-p">Nexus Pac-Man</h3>
+				<br />
+	  			<a class="button" href="/1-player-arcade">Play Nexus Pac-Man</a>
 			</div>
 			<div class="col-md-6 text-center">
-				<h3>2 Player Game</h3>
-				<a class="button" href="/2-player-arcade">Play two player now</a>
+				<h3 data-mh="game-p">Nexus Bubble Shooter</h3>
+				<a class="button" href="/2-player-arcade">Play Nexus Bubble Shooter</a>
 			</div>
 		</div>
       </div>

@@ -5,10 +5,16 @@ svg {
     display: block;
 
     .svg-icon {
+        height: 0%;
         animation-timing-function: ease;
         // transform: translateX(-50%);
         // opacity: 0;
         animation-name: fadeIn;
+    }
+
+    .tower {
+        height: 0;
+        transform: scaleY(0);
     }
       
     a {

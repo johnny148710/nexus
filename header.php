@@ -19,10 +19,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="stylesheet" href="https://use.typekit.net/ybc3kfn.css">
-	<?php wp_head(); ?>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script> -->
 	<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/amplitudejs@5.2.0/dist/amplitude.js"></script> -->
-
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
@@ -71,7 +69,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 			</div>
 			</div>
 		</div>
-
+		<?php if (is_user_logged_in()): ?>
+				
+		<?php else: ?>
+			<div class="login-wrapper text-center">
+				<!-- <h3>You must be logged in to view this page!</h3> -->
+				<br>
+				<?php wp_login_form(); ?>
+			</div>
+		<?php endif; ?>
 		
 
 

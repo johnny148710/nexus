@@ -24,9 +24,14 @@ $container = get_theme_mod( 'understrap_container_type' ); ?>
                         <?php $music_videos = get_sub_field('music_videos'); ?>
                         
                         <?php $music_title = get_sub_field('music_title'); ?>
-                        <div class="col-md-3">
-                            <h3><?php echo $music_title; ?></h3>
-                            <?php echo $music_videos; ?>
+
+                        <div class="col-md-3 music-container">
+                            <div class="music-text" data-mh="mh-title">
+                                <?php echo $music_title; ?>
+                            </div>    
+                            <div loading="lazy">
+                                <?php echo $music_videos; ?>                                
+                            </div>
                         </div>
                     <?php endwhile; ?>
                 </div>
