@@ -1,0 +1,93 @@
+body {
+    font-family: $fontAzoSans;
+}
+
+h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    background: rgb(238,199,128);
+    font-size: 3.5rem;
+    background: -webkit-linear-gradient(
+        0deg, rgba(238,199,128,1) 10%,
+        rgba(247,239,226,1) 20%, 
+        rgba(197,132,46,1) 40%, 
+        rgba(237,197,134,1) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    text-transform: uppercase;
+    background: rgb(238,199,128);
+    background: -webkit-linear-gradient(
+        0deg, rgba(238,199,128,1) 10%,
+        rgba(247,239,226,1) 20%, 
+        rgba(197,132,46,1) 40%, 
+        rgba(237,197,134,1) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 {
+    font-family: $fontAzoSans;
+    font-weight: 900;
+    color: $red;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: $fontAzoSans;
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: $red;
+    text-transform: uppercase;
+}
+
+p {
+    color: $white;
+
+    strong {
+    }
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+a.button, button {
+    transition: .3s ease all;
+    display: inline-block;
+    border-radius: 5px;
+    background: transparent;
+    color: $white;
+    background: $red;
+    padding: 0.7rem 1rem 0.5rem 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    i {
+        padding-left: 1.5rem;
+    }
+
+    &:hover {
+        color: $white;
+    }    
+}
+
+button {
+    p {
+        margin-bottom: 0;
+        display: inline;
+    }
+}
+
+iframe {
+    max-width: 100%;
+    width: 100%;
+}

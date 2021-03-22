@@ -1,0 +1,15 @@
+.agenda {
+    h3 {
+        border-top: none;
+        padding: 0 0 3rem 0
+    }
+
+    &__headings {
+        padding-top: 1rem;
+        
+        p {
+            color: $purple;
+            font-size: 1.2rem;
+        }
+    }
+}

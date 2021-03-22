@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Frutiger';
+    
+    src: url('../fonts/FrutigerLTStd-Roman.eot'); /* IE9 Compat Modes */
+    src: local('Frutiger'), local('Frutiger'),
+         url('../fonts/FrutigerLTStd-Roman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/FrutigerLTStd-Roman.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/FrutigerLTStd-Roman.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/FrutigerLTStd-Roman.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/FrutigerLTStd-Roman.svg') format('svg'); /* Legacy iOS */
+  }
+ 
+
+  @font-face {
+    font-family: 'FrutigerBold';
+    
+    src: url('../fonts/FrutigerLTStd-Bold.eot'); /* IE9 Compat Modes */
+    src: local('FrutigerBold'), local('FrutigerBold'),
+         url('../fonts/FrutigerLTStd-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/FrutigerLTStd-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/FrutigerLTStd-Bold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/FrutigerLTStd-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/FrutigerLTStd-Bold.svg') format('svg'); /* Legacy iOS */
+  }

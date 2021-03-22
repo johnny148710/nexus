@@ -1,0 +1,47 @@
+svg {
+    overflow: visible;
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+
+    .svg-icon {
+        animation-timing-function: ease;
+        // transform: translateX(-50%);
+        // opacity: 0;
+        animation-name: fadeIn;
+    }
+      
+    a {
+        &:hover {
+            text-decoration: none;
+            cursor: pointer;
+            align-self: flex-end;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            transform-origin: bottom;
+            animation-name: bounce;
+            animation-timing-function: ease;
+        }
+    }
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    25%  { transform: translateY(20px); }
+    50%  { transform: translateY(-50px); }
+    75%  { transform: translateY(20px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    0%   {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
